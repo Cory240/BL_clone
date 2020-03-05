@@ -1,4 +1,5 @@
 class Card:
+    # Assigns inital value to each card, used later for counter when determining either a bust or which player's hand wins
     cards = {
         "two": 2,
         "three": 3,
@@ -14,7 +15,8 @@ class Card:
         "king": 10,
         "ace": 11
     }
-
+    
+    # Assigns cards to value for player, returns output
     @staticmethod
     def get_card_val(name):
         if name in Card.cards:
